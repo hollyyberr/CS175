@@ -34,6 +34,7 @@ public class PaintCost {
 		double totalSubtractedFootage = 0;
 		double sqFootEndingTotal = 0;
 		double endingCost = 0;
+		
 		//Scan in numbers for code
 		Scanner in = new Scanner(System.in);
 		NumberFormat formatter = NumberFormat.getCurrencyInstance();
@@ -143,11 +144,27 @@ public class PaintCost {
 		
 		
 		
-/*
+/* Paste output here:
+ * Enter the whole length in feet of the house without the remainder of inches:  40
+Enter the whole width in feet of the house without the remainder of inches:  15
+Enter the whole height in feet of the house without the remainder of inches:  25
+Enter the remaining inches in the house's length:  0
+Enter the remaining inches in the house's width:  0
+Enter the remaining inches in the house's height:  0
+Enter the dimensions for length of the windows in feet without the remainder of inches:  4
+Enter the dimensions for height of the windows in feet without the remainder of inches:  2
+Enter the dimensions for length of the windows for the remainder of inches:  0
+Enter the dimensions for height of the windows for the remainder of inches:  0
+Enter the dimensions for length of the doors in feet without the remainder of inches:  6
+Enter the dimensions for height of the doors in feet without the remainder of inches:  3
+Enter the dimensions for length of the doors for the remainder of inches:  0
+Enter the dimensions for height of the doors for the remainder of inches:  0
+Enter the number of windows:  10
+Enter the number of doors:  2
+Enter the cost the painter charges for square foot: 5
+The total cost to paint the house is $13,420.00.
+
  * 
-
-
-Print out the total cost for painting.
 
  */
 
