@@ -31,7 +31,7 @@ public class E510 {
 
 		//Print 'paycheck'
 		NumberFormat fmt = NumberFormat.getCurrencyInstance();
-		System.out.println(name + "'s Paycheck: " + fmt.format(pay));
+		System.out.println(name + "'s Paycheck: " + fmt.format(paycheck));
 
 
 	}
