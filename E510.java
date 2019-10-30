@@ -1,15 +1,13 @@
-package hw3;
-
 import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class E510 {
 
 	public static void main(String[] args) {
-		
-		final int STANDARD = 40;   // standard hours in a work week
 
-		double pay = 0.0;
+		final int WORK = 40;   // standard hours in a work week
+
+		double paycheck = 0.0;
 		String name = null;
 		Scanner in = new Scanner (System.in);
 
@@ -24,17 +22,17 @@ public class E510 {
 		System.out.println ();
 
 		//Calculate overtime at "time and a half"
-		if (hours > STANDARD) {
-			pay = STANDARD * rate + (hours - STANDARD) * (rate * 1.5);
+		if (hours > WORK) {
+			paycheck = WORK * rate + (hours - WORK) * (rate * 1.5);
 		}
 		else {
-			pay = hours * rate;
+			paycheck = hours * rate;
 		}
-		
+
 		//Print 'paycheck'
 		NumberFormat fmt = NumberFormat.getCurrencyInstance();
 		System.out.println(name + "'s Paycheck: " + fmt.format(pay));
-		
+
 
 	}
 
