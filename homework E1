@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class FloatingPointReader {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter a floating point number: ");
+		float number = scan.nextFloat();
+		int zero = 0;
+		int one = 1;
+		if (number == zero) {
+			System.out.print("The number is equal to zero!");
+		}
+			else if (number > zero) {
+				System.out.print("The number is positive!");
+			}
+			else if (number < zero) {
+				System.out.print("The number is negative!");
+			}
+		}
+
+}
