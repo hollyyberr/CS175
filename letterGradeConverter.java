@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class letterGradeConverter {
 
@@ -9,6 +9,7 @@ public class letterGradeConverter {
 		double gpa = 0.0;
 		double gradePoints = 0.0;
 		double totalNumberGrade = 0.0;
+		int totalCreditHours = 0;
 		String courseInfo = null;
 		System.out.print("Enter course info separated by commas(title, credit hours, a letter grade(followed by + or - if applicable), or Q to quit : ");		
 
@@ -73,11 +74,11 @@ public class letterGradeConverter {
 			else {
 				System.out.println("Invalid letter grade, enter a different value: ");
 			}
-			gradePoints = + number * hours;
-			int totalCreditHours =+ hours;
-			totalNumberGrade =+ number;
-			gpa = totalNumberGrade/totalCreditHours;
-			System.out.print("Enter course info separated by commas(title, credit hours, a letter grade(followed by + or - if applicable), : ");
+			gradePoints += (number * hours);
+			totalCreditHours += hours;
+			totalNumberGrade += number;
+			gpa = gradePoints/totalCreditHours;
+			System.out.print("\nEnter course info separated by commas(title, credit hours, a letter grade(followed by + or - if applicable), : ");
 		}
 	
 
