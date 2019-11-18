@@ -3,32 +3,33 @@ package Exam3;
 import java.util.Scanner;
 
 public class NestedLoops {
-	public static void main(String[] args) {
-//declare and initialize local variables
-		int x;
-		int y;
-		int multiples;
-		int max = 10;
-		int greaterNum = 100;
-//first for loop
-		for (x = 1; x <= max; x++) {
-//nested for loop
-			for (y = 1; y <= max; y++) {
-				multiples = x * y;
-				System.out.print(multiples);
-				if(multiples < 10){
-					System.out.print("    ");
-				}
-				else if(multiples >= greaterNum){
-					System.out.print("  ");
-				}
-				else if(multiples >= max){
-					System.out.print("   ");
-				}
 
+	public static void main(String[] args) {
+
+		//prints first two rows
+		int i, j, sum, max = 10, sumMax = 100;
+		System.out.print("   ");
+		for (i = 1; i <= max; i++) {
+			System.out.printf("%5d", i);
+		}
+		System.out.println();
+		System.out.println("______________________________________________________");
+
+		//main multiplication table
+		for (i = 1; i <= max; i++) {
+			if (i < 10) {
+				System.out.print(" " + i + "|");
 			}
-//print each number row on a new line
+			else {
+				System.out.print(i + "|");
+			}
+			for (j = 1; j <= max; j++) {
+				sum = i * j;
+				System.out.printf("%5d", sum);
+			}
 			System.out.println();
 		}
+
 	}
+
 }
