@@ -53,7 +53,17 @@ public class BankAccount
    */
    public void withdraw(double amount)
    {   
+	   if(amount <= balance) {
 	   balance = balance - amount;
+	   
+	   }
+	   else {
+		   System.out.println("Error: Withdrawl exceeds current balance. Transaction cannot be completed...");
+		   System.out.println("Withdrawl amount: " + amount);
+		   System.out.println("Account Balance: " + balance);
+	   }
+
+	   
    }
 
    /**

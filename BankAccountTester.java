@@ -11,19 +11,26 @@ public class BankAccountTester
 	public static void main(String[] args)
 	{
 		//This line creates a new BankAccount object called harrysChecking with 0 balance
-		BankAccount harrysChecking = new BankAccount();
+		//instantiation
+		BankAccount harrysChecking = new BankAccount(1000);
+		BankAccount sallysChecking = new BankAccount(500);
 
 		//This line calls the deposit method for harrysChecking
 		//Note the deposit is for $2000
 		harrysChecking.deposit(2000);
+		sallysChecking.deposit(700);
 
 		//This line calls the withdrawal method for harrysChecking
 		//Note the withdrawal is for $500
 		harrysChecking.withdraw(500);
+		sallysChecking.withdraw(1300);
 
 		//This line calls the getBalance method and prints it     
-		System.out.println(harrysChecking.getBalance());
-		System.out.println("Expected: 1500");      
+		System.out.println("Current bank account balance for Harry's Checking: " + harrysChecking.getBalance());
+		System.out.println("Expected amount in bank account for Harry's Checking: 2500");  
+		System.out.println("Current bank account balance for Sally's Checking: " + sallysChecking.getBalance());
+		System.out.println("Expected amount in bank account for Sally's Checking: -100");  
+
 	}
 }
 
