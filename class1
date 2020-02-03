@@ -1,0 +1,20 @@
+package edu.monmouth.cs176.s1299693.mp1;
+
+import java.util.Scanner;
+
+public class Class1 {
+	Scanner scan = new Scanner(System.in);
+
+	//Constructor setting up the array
+	public void GetString (int length) {
+		String []strings = new String [length];
+		}
+	//Load method calling the scanner and prompts user to enter strings
+	public void load() {
+		for(int i=0; i < strings.length; i++) {
+		System.out.print("Enter a series of strings: ");
+		 = scan.nextLine();
+	}
+	}
+
+	}
